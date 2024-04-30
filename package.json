@@ -10,6 +10,7 @@
     "fix": "next lint --fix"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.5",
     "@tailwindcss/typography": "^0.5.13",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.7",

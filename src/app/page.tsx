@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <section className="h-screen flex flex-col items-center justify-center px-4">
       <div className="flex flex-col p-8 rounded-xl bg-neutral">
-        <h1 className="text-5xl 2xl:text-6xl font-medium prose prose-neutral">
+        <h1 className="text-5xl 2xl:text-6xl font-medium prose">
           <span className="hover:animate-pulse">What's up,</span> I'm{' '}
           <span className="text-accent hover:text-primary">Jagger</span>
         </h1>
-        <p className="prose prose-neutral 2xl:text-xl pt-4">
+        <p className="prose 2xl:text-xl pt-4">
           I'm a Full Stack Developer at{' '}
           <a
             className="text-secondary"
@@ -27,7 +27,7 @@ export default function Home() {
         </p>
         <button
           onClick={() => router.push('/about')}
-          className="btn btn-primary mt-4 2xl:text-xl w-max"
+          className="btn btn-primary mt-4 2xl:text-xl w-max self-center"
         >
           About Me
         </button>
