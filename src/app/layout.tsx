@@ -2,7 +2,7 @@ import Navbar from '@/components/nav-bar';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { BackgroundBeams } from './ui/background-beams';
+import { Boxes } from './ui/background-boxes';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,13 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="dim" lang="en">
-      <body
-        className={`antialiased flex flex-col min-h-screen ${inter.className}`}
-      >
-        <main>
-          <BackgroundBeams className="z-[-1]" />
+      <body className={`antialiased${inter.className}`}>
+        <main className="flex flex-col h-screen">
           <Navbar />
-          {children}
+          <div className="flex flex-col justify-center items-center flex-grow">
+            {children}
+          </div>
+          {/* <Boxes className="absolute inset-0 z-0" /> */}
         </main>
       </body>
     </html>

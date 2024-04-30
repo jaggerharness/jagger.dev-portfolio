@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Navbar() {
   const [theme, setTheme] = useState('dark');
   return (
-    <div className="navbar bg-base-200 fixed">
+    <div className="navbar bg-base-200 z-10">
       <div className="flex-1 text-xl">
         <a className="btn btn-ghost text-xl" href="/">
           jagger.dev
@@ -30,7 +30,7 @@ export default function Navbar() {
               size={24}
               onClick={() => {
                 setTheme('dark');
-                document.documentElement.setAttribute('data-theme', 'dark');
+                document.documentElement.setAttribute('data-theme', 'dim');
               }}
             />
           )}
