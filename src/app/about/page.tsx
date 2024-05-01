@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center px-4">
-      <div className="flex flex-col p-8 rounded-xl bg-neutral">
-        <p className="prose prose-neutral pt-4">
+    <section className="flex items-center justify-center px-4">
+      <div className="flex flex-col p-4 md:p-8 rounded-xl bg-neutral z-10">
+        <p className="prose 2xl:text-xl pt-4">
           My software development journey started back in 2017 at{' '}
           <a
             className="text-primary"
@@ -26,7 +26,7 @@ export default function About() {
           computer science and have immersed myself in the world of software
           development, constantly learning and growing along the way.
         </p>
-        <p className="prose prose-neutral pt-4">
+        <p className="prose 2xl:text-xl pt-4">
           Stay tuned for updates as I continue with exciting projects. I've got
           some interesting ideas in the pipeline.
         </p>

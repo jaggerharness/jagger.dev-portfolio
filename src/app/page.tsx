@@ -8,7 +8,7 @@ export default function Home() {
     <section className="flex items-center justify-center px-4">
       <div className="flex flex-col p-8 rounded-xl bg-neutral z-10">
         <h1 className="text-5xl 2xl:text-6xl font-medium prose">
-          <span className="hover:animate-pulse">What's up,</span> I'm{' '}
+          What's up, I'm{' '}
           <span className="text-accent hover:text-primary">Jagger</span>
         </h1>
         <p className="prose 2xl:text-xl pt-4">

@@ -18,13 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="dim" lang="en">
-      <body className={`antialiased${inter.className}`}>
+      <body className={`antialiased ${inter.className}`}>
         <main className="flex flex-col h-screen">
           <Navbar />
           <div className="flex flex-col justify-center items-center flex-grow">
             {children}
           </div>
-          {/* <Boxes className="absolute inset-0 z-0" /> */}
+          <Boxes className="absolute inset-0 z-0" />
         </main>
       </body>
     </html>
