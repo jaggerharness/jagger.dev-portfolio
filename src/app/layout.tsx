@@ -2,7 +2,7 @@ import Navbar from '@/components/nav-bar';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Boxes } from './ui/background-boxes';
+import { BackgroundBeams } from './ui/background-beams';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="flex flex-col justify-center items-center flex-grow">
             {children}
           </div>
-          <Boxes className="absolute inset-0 z-0" />
+          <BackgroundBeams className="absolute inset-0 z-0" />
         </main>
       </body>
     </html>

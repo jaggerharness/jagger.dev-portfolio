@@ -1,7 +1,6 @@
 'use client';
 
 import { MoonStars, Sun } from '@phosphor-icons/react/dist/ssr';
-import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -21,7 +20,7 @@ export default function Navbar() {
               size={24}
               onClick={() => {
                 setTheme('light');
-                document.documentElement.setAttribute('data-theme', 'pastel');
+                document.documentElement.setAttribute('data-theme', 'emerald');
               }}
             />
           ) : (
@@ -34,12 +33,8 @@ export default function Navbar() {
               }}
             />
           )}
-          <Link key={'/'} href={'/'} className="hover:text-primary">
-            home
-          </Link>
-          <Link key={'/about'} href={'/about'} className="hover:text-secondary">
-            about
-          </Link>
+          <button className="hover:text-primary">home</button>
+          <button className="hover:text-secondary">about</button>
         </ul>
       </div>
     </div>
