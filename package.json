@@ -12,6 +12,7 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.5",
     "@tailwindcss/typography": "^0.5.13",
+    "@vercel/analytics": "^1.2.2",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.7",
     "mini-svg-data-uri": "^1.4.4",
