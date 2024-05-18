@@ -74,7 +74,7 @@ export default function Home() {
                   I've got some interesting ideas in the pipeline.
                 </p>
                 <Image
-                  src={`/avatar.png`}
+                  src={'/avatar.png'}
                   alt="about-me-image"
                   height="150"
                   width="150"
