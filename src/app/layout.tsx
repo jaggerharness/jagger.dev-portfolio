@@ -1,5 +1,6 @@
 import Navbar from '@/components/nav-bar';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -25,6 +26,7 @@ export default function RootLayout({
           <div className="flex flex-col justify-center items-center flex-grow">
             {children}
             <Analytics />
+            <SpeedInsights />
           </div>
           <BackgroundBeams className="absolute inset-0 z-0" />
         </main>
