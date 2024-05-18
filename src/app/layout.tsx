@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="dim" lang="en">
+    <html data-theme="night" lang="en">
       <body className={`antialiased ${inter.className}`}>
-        <main className="flex flex-col h-screen">
+        <main>
           <Navbar />
           <div className="flex flex-col justify-center items-center flex-grow">
             {children}

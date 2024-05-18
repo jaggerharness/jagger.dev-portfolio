@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { Element, Link } from 'react-scroll';
+import { SocialIcon } from 'react-social-icons';
 import { TracingBeam } from './ui/tracing-beams';
 
 export default function Home() {
@@ -128,6 +129,22 @@ export default function Home() {
                   I'm always open to new opportunities and collaborations. Feel
                   free to reach out to me if you have any questions or just want
                   to chat.
+                </p>
+                <p className="flex flex-row pt-12 justify-between">
+                  <SocialIcon
+                    url="https://linkedin.com/in/jaggerharness"
+                    target="_blank"
+                  />
+                  <SocialIcon
+                    url="https://github.com/jaggerharness"
+                    target="_blank"
+                  />
+                  <SocialIcon url="https://x.com/jagger_dev" target="_blank" />
+                  <SocialIcon
+                    url="https://discordapp.com/users/364610872816959498"
+                    network="discord"
+                    target="_blank"
+                  />
                 </p>
               </div>
             }

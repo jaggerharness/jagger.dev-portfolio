@@ -26,7 +26,7 @@ export const TracingBeam = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.4], [50, svgHeight]),
     {
       stiffness: 500,
       damping: 90,
@@ -49,7 +49,7 @@ export const TracingBeam = ({
         <motion.div
           transition={{
             duration: 0.2,
-            delay: 0.5,
+            delay: 0.2,
           }}
           animate={{
             boxShadow:
