@@ -139,6 +139,7 @@ export default function Home() {
                     url="https://github.com/jaggerharness"
                     target="_blank"
                   />
+                  <SocialIcon url="https://www.threads.net/@jaggerslade" target="_blank" />
                   <SocialIcon url="https://x.com/jagger_dev" target="_blank" />
                   <SocialIcon
                     url="https://discordapp.com/users/364610872816959498"
