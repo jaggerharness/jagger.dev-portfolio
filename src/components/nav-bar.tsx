@@ -30,7 +30,7 @@ export default function Navbar() {
               size={24}
               onClick={() => {
                 setTheme('dark');
-                document.documentElement.setAttribute('data-theme', 'night');
+                document.documentElement.setAttribute('data-theme', 'dim');
               }}
             />
           )}

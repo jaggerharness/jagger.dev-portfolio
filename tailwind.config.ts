@@ -57,7 +57,7 @@ const config: Config = {
   daisyui: {
     themes: [
       "garden",
-      "night",
+      "dim",
     ],
   },
 };
