@@ -11,11 +11,10 @@ export default function Home() {
       <Element name="home">
         <section className="flex items-center justify-center px-4 min-h-screen">
           <div className="flex flex-col p-8 rounded-xl bg-base-200 z-10">
-            <h1 className="text-2xl md:text-5xl 2xl:text-6xl font-medium prose">
-              What's up, I'm{' '}
-              <span className="text-accent">Jagger</span>
+            <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-medium prose text-center lg:text-left">
+              What's up, I'm <span className="text-accent">Jagger</span>
             </h1>
-            <p className="prose 2xl:text-xl pt-4">
+            <p className="prose text-lg 2xl:text-xl pt-4 text-center lg:text-left">
               I'm a Full Stack Developer at{' '}
               <a
                 className="text-secondary"
@@ -139,7 +138,10 @@ export default function Home() {
                     url="https://github.com/jaggerharness"
                     target="_blank"
                   />
-                  <SocialIcon url="https://www.threads.net/@jaggerslade" target="_blank" />
+                  <SocialIcon
+                    url="https://www.threads.net/@jaggerslade"
+                    target="_blank"
+                  />
                   <SocialIcon url="https://x.com/jagger_dev" target="_blank" />
                   <SocialIcon
                     url="https://discordapp.com/users/364610872816959498"
