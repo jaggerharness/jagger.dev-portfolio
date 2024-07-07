@@ -12,7 +12,7 @@ export default function Home() {
         <section className="flex items-center justify-center px-4 min-h-screen">
           <div className="flex flex-col p-8 rounded-xl bg-base-200 z-10">
             <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-medium prose text-center lg:text-left">
-              What's up, I'm <span className="text-accent">Jagger</span>
+              Hello, I'm <span className="text-accent">Jagger</span>
             </h1>
             <p className="prose text-lg 2xl:text-xl pt-4 text-center lg:text-left">
               I'm a Full Stack Developer at{' '}
