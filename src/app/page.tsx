@@ -88,37 +88,34 @@ export default function Home() {
                 </span>
                 <ul className="prose 2xl:text-lg py-4 list-disc list-inside">
                   <li>
-                    Maintain and develop full-stack web applications for the
-                    company, meeting numerous client requirements. Utilize
-                    Laravel, MySQL, JavaScript, and CSS while adhering to best
-                    practices.
+                    Managed and delivered numerous applications for various
+                    clients, overseeing projects from discovery and planning to
+                    production stages
                   </li>
                   <li>
-                    Implement RESTful APIs, which facilitate seamless
-                    integration between web and mobile applications and various
-                    third-party platforms, enabling enhanced functionality and a
-                    user-friendly experience for clients across diverse
-                    platforms.
+                    Promoted and implemented best practices in coding, testing,
+                    and deployment to improve overall project quality and
+                    efficiency
                   </li>
                   <li>
-                    Utilize Flutter framework to develop multiple cross-platform
-                    mobile applications, employing MVVM / MVCS design patterns
-                    to ensure efficient code architecture and deliver
-                    exceptional user experiences.
+                    Successfully migrated a large, 10+ year old legacy PHP
+                    project to the latest version of the Laravel framework,
+                    updating the codebase to adhere to modern best practices and
+                    significantly improving maintainability, performance, and
+                    security
                   </li>
                   <li>
-                    Lead a small team of developers, providing mentorship and
-                    guidance to enhance their technical skills and productivity.
-                    Drive the adoption of best practices in software
-                    development, ensuring the creation of clean, testable, and
-                    maintainable code across all projects.
+                    Collaborated with a team of engineers to develop a mobile
+                    and desktop application for a conveyor company, streamlining
+                    operations by eliminating the need for PLC programming for
+                    typical use cases
                   </li>
                   <li>
-                    Maintain and develop a .NET WPF Windows application and
-                    companion .NET Xamarin cross-platform mobile application for
-                    a large conveyor manufacturer that would allow end-users to
-                    program and diagnose their conveyor systems without the use
-                    of PLC.
+                    Led a team of developers, guiding them in planning,
+                    implementing, and executing software development tasks.
+                    Provided solutions to ensure timely project completion,
+                    helping team members overcome challenges and achieve their
+                    goals
                   </li>
                 </ul>
                 <h2 className="text-3xl md:text-4xl pt-8 font-bold">
