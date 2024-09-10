@@ -3,7 +3,11 @@
 import Image from 'next/image';
 import { Element, Link as ReactLink } from 'react-scroll';
 import { SocialIcon } from 'react-social-icons';
-import { Timeline } from './ui/timeline';
+import { Timeline } from './components/timeline';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Heading } from './components/Heading';
+import { Paragraph } from './components/Paragraph';
 
 export default function Home() {
   const data = [
@@ -186,32 +190,209 @@ export default function Home() {
         <section className="bg-base-300 w-screen h-screen">
           <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">Portfolio</h2>
-            <p className="prose 2xl:text-lg pt-4">
-              {/* <Link
-                href="/your-target-url"
-                key="unique-key"
-                className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
+            <div className="grid grid-cols-1 gap-10 pt-8">
+              <motion.div
+                key={'https://workout-tracker-beige.vercel.app/'}
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 0.2, delay: 1 * 0.1 }}
               >
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h4 className="font-black text-lg md:text-lg lg:text-lg ">
-                      Title
-                    </h4>
-                    <p className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
-                      Desc
-                    </p>
+                <Link
+                  href={'https://workout-tracker-beige.vercel.app/'}
+                  key={'https://workout-tracker-beige.vercel.app/'}
+                  className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
+                >
+                  <Image
+                    src={'/avatar.png'}
+                    alt="thumbnail"
+                    height="150"
+                    width="150"
+                    className="rounded-md"
+                  />
+                  <div className="flex flex-col justify-between">
+                    <div>
+                      <Heading
+                        as="h4"
+                        className="font-black text-lg md:text-lg lg:text-lg "
+                      >
+                        {'LiftLens'}
+                      </Heading>
+                      <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+                        {
+                          'A workout tracking app that helps you log workouts, plan routines, and gain insights into the muscles targeted by each exercise.'
+                        }
+                      </Paragraph>
+                    </div>
+                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                      <span
+                        key={'Next.js'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Next.js'}
+                      </span>
+                      <span
+                        key={'Prisma'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Prisma'}
+                      </span>
+                      <span
+                        key={'NeonDB'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'NeonDB'}
+                      </span>
+                      <span
+                        key={'TailwindCSS'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'TailwindCSS'}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
-                    <span
-                      key={1}
-                      className="text-xs md:text-xs lg:text-xs bg-gray-50 px-2 py-1 rounded-sm text-secondary"
-                    >
-                      Next.js
-                    </span>
+                </Link>
+              </motion.div>
+              <motion.div
+                key={'https://workout-tracker-beige.vercel.app/'}
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 0.2, delay: 2 * 0.1 }}
+              >
+                <Link
+                  href={'https://workout-tracker-beige.vercel.app/'}
+                  key={'https://workout-tracker-beige.vercel.app/'}
+                  className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
+                >
+                  <Image
+                    src={'/liftlens-logo.png'}
+                    alt="thumbnail"
+                    height="150"
+                    width="150"
+                    className="rounded-md"
+                  />
+                  <div className="flex flex-col justify-between">
+                    <div>
+                      <Heading
+                        as="h4"
+                        className="font-black text-lg md:text-lg lg:text-lg "
+                      >
+                        {'LiftLens'}
+                      </Heading>
+                      <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+                        {
+                          'A workout tracking app that helps you log workouts, plan routines, and gain insights into the muscles targeted by each exercise.'
+                        }
+                      </Paragraph>
+                    </div>
+                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                      <span
+                        key={'Next.js'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Next.js'}
+                      </span>
+                      <span
+                        key={'Prisma'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Prisma'}
+                      </span>
+                      <span
+                        key={'NeonDB'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'NeonDB'}
+                      </span>
+                      <span
+                        key={'TailwindCSS'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'TailwindCSS'}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </Link> */}
-            </p>
+                </Link>
+              </motion.div>
+              <motion.div
+                key={'https://workout-tracker-beige.vercel.app/'}
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 0.2, delay: 3 * 0.1 }}
+              >
+                <Link
+                  href={'https://workout-tracker-beige.vercel.app/'}
+                  key={'https://workout-tracker-beige.vercel.app/'}
+                  className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
+                >
+                  <Image
+                    src={'/avatar.png'}
+                    alt="thumbnail"
+                    height="150"
+                    width="150"
+                    className="rounded-md"
+                  />
+                  <div className="flex flex-col justify-between">
+                    <div>
+                      <Heading
+                        as="h4"
+                        className="font-black text-lg md:text-lg lg:text-lg "
+                      >
+                        {'LiftLens'}
+                      </Heading>
+                      <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+                        {
+                          'A workout tracking app that helps you log workouts, plan routines, and gain insights into the muscles targeted by each exercise.'
+                        }
+                      </Paragraph>
+                    </div>
+                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                      <span
+                        key={'Next.js'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Next.js'}
+                      </span>
+                      <span
+                        key={'Prisma'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'Prisma'}
+                      </span>
+                      <span
+                        key={'NeonDB'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'NeonDB'}
+                      </span>
+                      <span
+                        key={'TailwindCSS'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'TailwindCSS'}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            </div>
           </div>
         </section>
       </Element>
