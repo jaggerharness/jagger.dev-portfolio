@@ -1,11 +1,106 @@
 'use client';
 
 import Image from 'next/image';
-import { Element, Link } from 'react-scroll';
+import { Element, Link as ReactLink } from 'react-scroll';
 import { SocialIcon } from 'react-social-icons';
-import { TracingBeam } from './ui/tracing-beams';
+import { Timeline } from './ui/timeline';
 
 export default function Home() {
+  const data = [
+    {
+      title: 'July 2023 - Present',
+      content: (
+        <div>
+          <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
+            Senior Full Stack Software Developer, AceOne Technologies –
+            Jonesboro, AR
+          </p>
+          <ul className="prose list-disc">
+            <li>
+              Lead a team of developers, ensuring timely project completion by
+              planning for potential challenges and providing guidance
+              throughout the software development lifecycle
+            </li>
+            <li>
+              Architect new software solutions and rapidly develop
+              proof-of-concept applications for client presentations,
+              demonstrating technical feasibility and business value
+            </li>
+            <li>
+              Manage and deliver numerous applications for various clients,
+              overseeing projects from discovery and planning to production,
+              ensuring alignment with client goals
+            </li>
+            <li>
+              Promote and implement best practices in coding, testing, and
+              deployment, improving project quality and efficiency
+            </li>
+            <li>
+              Collaborate with a team of electrical engineers to develop an
+              application for a conveyor company, streamlining operations and
+              eliminating the need for PLC programming for typical use cases
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'July 2021 - July 2023',
+      content: (
+        <div>
+          <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
+            Full Stack Software Developer, AceOne Technologies – Jonesboro, AR
+          </p>
+          <ul className="prose list-disc">
+            <li>
+              Built new software projects from the ground up, actively
+              contributing to all stages of the software development lifecycle,
+              from initial planning and design to deployment and maintenance
+            </li>
+            <li>
+              Enhanced an outdated API, achieving a performance improvement of
+              50-70% by upgrading to the latest tools and optimizing database
+              operations, resulting in faster response times and improved user
+              experience
+            </li>
+            <li>
+              Participated in client meetings to gather requirements and propose
+              tailored software solutions, ensuring alignment with business
+              goals and technical feasibility
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'June 2021 - July 2021',
+      content: (
+        <div>
+          <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
+            Software Development Intern, AceOne Technologies – Jonesboro, AR
+          </p>
+          <ul className="prose list-disc">
+            <li>
+              Investigated and resolved client-reported issues across multiple
+              web applications, ensuring a smooth user experience and timely
+              resolution of critical bugs
+            </li>
+            <li>
+              Worked closely with cross-functional teams, including design,
+              development, and QA, to contribute to diverse projects, adapting
+              quickly to different technologies and project requirements
+            </li>
+            <li>
+              Assisted in estimating tasks and implementing minor features in
+              existing software projects, collaborating with project management
+              to enhance functionality and meet client expectations
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <>
       <Element name="home">
@@ -28,127 +123,126 @@ export default function Home() {
               solutions, optimizing / maintaining existing software
               infrastructures, and helping to turn ideas into reality.
             </p>
-            <Link to="aboutMe" className="self-center" spy={true} smooth={true}>
+            <ReactLink
+              to="aboutMe"
+              className="self-center"
+              spy={true}
+              smooth={true}
+            >
               <button className="btn btn-primary mt-4 2xl:text-xl w-max">
                 About Me
               </button>
-            </Link>
+            </ReactLink>
           </div>
         </section>
       </Element>
       <Element name="aboutMe">
-        <section className="flex items-center justify-center px-4 h-screen">
-          <TracingBeam>
-            {
-              <div className="flex flex-col p-8 md:pt-8 pb-16 rounded-xl z-10">
-                <h2 className="text-3xl md:text-4xl font-bold">About Me </h2>
-                <p className="prose 2xl:text-lg pt-4">
-                  My software development journey started back in 2017 at{' '}
-                  <a
-                    className="text-primary"
-                    href="https://www.astate.edu/"
-                    target="_blank"
-                    rel=""
-                  >
-                    Arkansas State University.
-                  </a>{' '}
-                  Fresh out of college in an unrelated field, I found myself
-                  questioning where my true passion lay. Despite having a
-                  background in an entirely different field, my fascination with
-                  computers and video game consoles persisted, leaving me
-                  wondering about the inner workings of the systems that brought
-                  me so much joy. Driven by curiosity and a desire for
-                  fulfillment, I joined an introductory computer science course,
-                  Concepts of Programming.{' '}
-                  <span className="italic">Everything clicked.</span> The joy
-                  and excitement I experienced while learning about programming
-                  were unlike anything I had felt before. It was in that moment
-                  that I knew I had found my true passion. Since then, I've
-                  graduated with a degree in computer science and have immersed
-                  myself in the world of software development, constantly
-                  learning and growing along the way.
-                </p>
-                <p className="prose 2xl:text-lg py-4">
-                  Stay tuned for updates as I continue with exciting projects.
-                  I've got some interesting ideas in the pipeline.
-                </p>
-                <Image
-                  src={'/avatar.png'}
-                  alt="about-me-image"
-                  height="150"
-                  width="150"
-                  className="self-center pt-4"
-                />
-                <h2 className="text-3xl md:text-4xl pt-8 font-bold">
-                  Experience{' '}
-                </h2>
-                <h2 className="text-xl pt-4">AceOne Technologies</h2>
-                <span className="w-fit rounded-full py-1 text-sm italic">
-                  Full Stack Developer / June 2021 - Present
-                </span>
-                <ul className="prose 2xl:text-lg py-4 list-disc list-inside">
-                  <li>
-                    Managed and delivered numerous applications for various
-                    clients, overseeing projects from discovery and planning to
-                    production stages
-                  </li>
-                  <li>
-                    Promoted and implemented best practices in coding, testing,
-                    and deployment to improve overall project quality and
-                    efficiency
-                  </li>
-                  <li>
-                    Successfully migrated a large, 10+ year old legacy PHP
-                    project to the latest version of the Laravel framework,
-                    updating the codebase to adhere to modern best practices and
-                    significantly improving maintainability, performance, and
-                    security
-                  </li>
-                  <li>
-                    Collaborated with a team of engineers to develop a mobile
-                    and desktop application for a conveyor company, streamlining
-                    operations by eliminating the need for PLC programming for
-                    typical use cases
-                  </li>
-                  <li>
-                    Led a team of developers, guiding them in planning,
-                    implementing, and executing software development tasks.
-                    Provided solutions to ensure timely project completion,
-                    helping team members overcome challenges and achieve their
-                    goals
-                  </li>
-                </ul>
-                <h2 className="text-3xl md:text-4xl pt-8 font-bold">
-                  Contact Me
-                </h2>
-                <p className="prose 2xl:text-lg pt-4">
-                  I'm always open to new opportunities and collaborations. Feel
-                  free to reach out to me if you have any questions or just want
-                  to chat.
-                </p>
-                <p className="flex flex-row pt-12 justify-between">
-                  <SocialIcon
-                    url="https://linkedin.com/in/jaggerharness"
-                    target="_blank"
-                  />
-                  <SocialIcon
-                    url="https://github.com/jaggerharness"
-                    target="_blank"
-                  />
-                  <SocialIcon
-                    url="https://www.threads.net/@jaggerslade"
-                    target="_blank"
-                  />
-                  <SocialIcon url="https://x.com/jagger_dev" target="_blank" />
-                  <SocialIcon
-                    url="https://discordapp.com/users/364610872816959498"
-                    network="discord"
-                    target="_blank"
-                  />
-                </p>
-              </div>
-            }
-          </TracingBeam>
+        <section className="flex flex-col items-center justify-center bg-base-200 w-screen">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold pt-16">About Me</h2>
+            <p className="prose 2xl:text-lg pt-4">
+              My software development journey started back in 2017 at{' '}
+              <a
+                className="text-primary"
+                href="https://www.astate.edu/"
+                target="_blank"
+                rel=""
+              >
+                Arkansas State University.
+              </a>{' '}
+              Fresh out of college in an unrelated field, I began to wonder what
+              my true passion was. Despite having a background in an entirely
+              different field, my fascination with computers and video game
+              consoles persisted, leaving me wondering about the inner workings
+              of the systems that brought me so much joy. Driven by curiosity
+              and a desire for fulfillment, I joined an introductory computer
+              science course, Concepts of Programming.{' '}
+              <span className="italic">Everything clicked.</span> The joy and
+              excitement I experienced while learning about programming were
+              unlike anything I had felt before. It was in that moment that I
+              knew I had found my true passion. Since then, I've graduated with
+              a degree in computer science and have immersed myself in the world
+              of software development, constantly learning and growing along the
+              way.
+            </p>
+            <p className="prose 2xl:text-lg pt-4">
+              Stay tuned for updates as I continue with exciting projects. I've
+              got some interesting ideas in the pipeline.
+            </p>
+            <Image
+              src={'/avatar.png'}
+              alt="about-me-image"
+              height="150"
+              width="150"
+              className="py-8 mx-auto"
+            />
+          </div>
+        </section>
+      </Element>
+      <Element name="experience">
+        <Timeline data={data} />
+      </Element>
+      <Element name="portfolio">
+        <section className="bg-base-300 w-screen h-screen">
+          <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
+            <h2 className="text-3xl md:text-4xl pt-8 font-bold">Portfolio</h2>
+            <p className="prose 2xl:text-lg pt-4">
+              {/* <Link
+                href="/your-target-url"
+                key="unique-key"
+                className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
+              >
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-black text-lg md:text-lg lg:text-lg ">
+                      Title
+                    </h4>
+                    <p className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+                      Desc
+                    </p>
+                  </div>
+                  <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                    <span
+                      key={1}
+                      className="text-xs md:text-xs lg:text-xs bg-gray-50 px-2 py-1 rounded-sm text-secondary"
+                    >
+                      Next.js
+                    </span>
+                  </div>
+                </div>
+              </Link> */}
+            </p>
+          </div>
+        </section>
+      </Element>
+      <Element name="contact">
+        <section className="bg-base-100 w-screen">
+          <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
+            <h2 className="text-3xl md:text-4xl pt-8 font-bold">Contact Me</h2>
+            <p className="prose 2xl:text-lg pt-4">
+              I'm always open to new opportunities and collaborations. Feel free
+              to reach out to me if you have any questions or just want to chat.
+            </p>
+            <p className="flex flex-row pt-12 justify-between">
+              <SocialIcon
+                url="https://linkedin.com/in/jaggerharness"
+                target="_blank"
+              />
+              <SocialIcon
+                url="https://github.com/jaggerharness"
+                target="_blank"
+              />
+              <SocialIcon
+                url="https://www.threads.net/@jaggerslade"
+                target="_blank"
+              />
+              <SocialIcon
+                url="https://discordapp.com/users/364610872816959498"
+                network="discord"
+                target="_blank"
+              />
+            </p>
+          </div>
         </section>
       </Element>
     </>

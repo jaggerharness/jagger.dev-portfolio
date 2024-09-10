@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="navbar bg-base-200 z-50 sticky top-0">
       <div className="flex-1 text-xl">
         <a className="btn btn-ghost text-xl" href="/">
-          jagger.dev
+          jaggerharness.dev
         </a>
       </div>
       <div className="flex-none">
