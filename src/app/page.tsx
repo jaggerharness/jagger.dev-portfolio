@@ -109,7 +109,7 @@ export default function Home() {
     <>
       <Element name="home">
         <section className="flex items-center justify-center px-4 min-h-screen">
-          <div className="flex flex-col p-8 rounded-xl bg-base-200 z-10">
+          <div className="flex flex-col p-8 rounded-xl bg-base-300 z-10">
             <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-medium prose text-center lg:text-left">
               Hello, I'm <span className="text-accent">Jagger</span>
             </h1>
@@ -141,7 +141,7 @@ export default function Home() {
         </section>
       </Element>
       <Element name="aboutMe">
-        <section className="flex flex-col items-center bg-base-100 b w-screen">
+        <section className="flex flex-col items-center bg-base-300 w-screen py-8">
           <div className="flex flex-col p-8 md:pt-8 z-10 w-fit">
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">About Me</h2>
             <p className="prose 2xl:text-lg pt-4">
