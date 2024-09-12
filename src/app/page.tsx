@@ -1,13 +1,13 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Element, Link as ReactLink } from 'react-scroll';
 import { SocialIcon } from 'react-social-icons';
-import { Timeline } from './components/timeline';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { Heading } from './components/Heading';
 import { Paragraph } from './components/Paragraph';
+import { Timeline } from './components/timeline';
 
 export default function Home() {
   const data = [
@@ -142,8 +142,8 @@ export default function Home() {
       </Element>
       <Element name="aboutMe">
         <section className="flex flex-col items-center justify-center bg-base-200 w-screen">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold pt-16">About Me</h2>
+          <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
+            <h2 className="text-3xl md:text-4xl pt-8 font-bold">About Me</h2>
             <p className="prose 2xl:text-lg pt-4">
               My software development journey started back in 2017 at{' '}
               <a
@@ -178,7 +178,7 @@ export default function Home() {
               alt="about-me-image"
               height="150"
               width="150"
-              className="py-8 mx-auto"
+              className="pt-16 mx-auto"
             />
           </div>
         </section>
@@ -187,7 +187,7 @@ export default function Home() {
         <Timeline data={data} />
       </Element>
       <Element name="portfolio">
-        <section className="bg-base-300 w-screen h-screen">
+        <section className="bg-base-300 w-screen h-fit">
           <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">Portfolio</h2>
             <div className="grid grid-cols-1 gap-10 pt-8">
@@ -209,17 +209,18 @@ export default function Home() {
                   className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
                 >
                   <Image
-                    src={'/avatar.png'}
+                    src={'/liftlens-logo.png'}
                     alt="thumbnail"
                     height="150"
                     width="150"
-                    className="rounded-md"
+                    className="rounded-md mx-auto sm:mr-auto"
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="flex flex-col justify-between">
                     <div>
                       <Heading
                         as="h4"
-                        className="font-black text-lg md:text-lg lg:text-lg "
+                        className="font-bold text-lg md:text-lg lg:text-lg "
                       >
                         {'LiftLens'}
                       </Heading>
@@ -259,7 +260,7 @@ export default function Home() {
                 </Link>
               </motion.div>
               <motion.div
-                key={'https://workout-tracker-beige.vercel.app/'}
+                key={'#'}
                 initial={{
                   opacity: 0,
                   x: -50,
@@ -271,122 +272,56 @@ export default function Home() {
                 transition={{ duration: 0.2, delay: 2 * 0.1 }}
               >
                 <Link
-                  href={'https://workout-tracker-beige.vercel.app/'}
-                  key={'https://workout-tracker-beige.vercel.app/'}
+                  href={'https://github.com/vunguyen7797/SmartPark'}
+                  key={'https://github.com/vunguyen7797/SmartPark'}
                   className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
                 >
                   <Image
-                    src={'/liftlens-logo.png'}
+                    src={'/smart-park-logo.png'}
                     alt="thumbnail"
                     height="150"
                     width="150"
-                    className="rounded-md"
+                    className="rounded-md mx-auto sm:mr-auto"
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="flex flex-col justify-between">
                     <div>
                       <Heading
                         as="h4"
-                        className="font-black text-lg md:text-lg lg:text-lg "
+                        className="font-bold text-lg md:text-lg lg:text-lg "
                       >
-                        {'LiftLens'}
+                        {'Smart Park'}
                       </Heading>
                       <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
                         {
-                          'A workout tracking app that helps you log workouts, plan routines, and gain insights into the muscles targeted by each exercise.'
+                          'A parking management system that uses computer vision to monitor parking lot occupancy in real-time. Completed as Senior Capstone Project at Arkansas State University.'
                         }
                       </Paragraph>
                     </div>
                     <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
                       <span
-                        key={'Next.js'}
+                        key={'Flutter'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
                       >
-                        {'Next.js'}
+                        {'Flutter'}
                       </span>
                       <span
-                        key={'Prisma'}
+                        key={'Node.js'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
                       >
-                        {'Prisma'}
+                        {'Node.js'}
                       </span>
                       <span
-                        key={'NeonDB'}
+                        key={'TensorFlow'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
                       >
-                        {'NeonDB'}
+                        {'TensorFlow'}
                       </span>
                       <span
-                        key={'TailwindCSS'}
+                        key={'Python'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
                       >
-                        {'TailwindCSS'}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-              <motion.div
-                key={'https://workout-tracker-beige.vercel.app/'}
-                initial={{
-                  opacity: 0,
-                  x: -50,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                transition={{ duration: 0.2, delay: 3 * 0.1 }}
-              >
-                <Link
-                  href={'https://workout-tracker-beige.vercel.app/'}
-                  key={'https://workout-tracker-beige.vercel.app/'}
-                  className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
-                >
-                  <Image
-                    src={'/avatar.png'}
-                    alt="thumbnail"
-                    height="150"
-                    width="150"
-                    className="rounded-md"
-                  />
-                  <div className="flex flex-col justify-between">
-                    <div>
-                      <Heading
-                        as="h4"
-                        className="font-black text-lg md:text-lg lg:text-lg "
-                      >
-                        {'LiftLens'}
-                      </Heading>
-                      <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
-                        {
-                          'A workout tracking app that helps you log workouts, plan routines, and gain insights into the muscles targeted by each exercise.'
-                        }
-                      </Paragraph>
-                    </div>
-                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
-                      <span
-                        key={'Next.js'}
-                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
-                      >
-                        {'Next.js'}
-                      </span>
-                      <span
-                        key={'Prisma'}
-                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
-                      >
-                        {'Prisma'}
-                      </span>
-                      <span
-                        key={'NeonDB'}
-                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
-                      >
-                        {'NeonDB'}
-                      </span>
-                      <span
-                        key={'TailwindCSS'}
-                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
-                      >
-                        {'TailwindCSS'}
+                        {'Python'}
                       </span>
                     </div>
                   </div>
@@ -404,7 +339,7 @@ export default function Home() {
               I'm always open to new opportunities and collaborations. Feel free
               to reach out to me if you have any questions or just want to chat.
             </p>
-            <p className="flex flex-row pt-12 justify-between">
+            <p className="flex flex-row pt-12 justify-between lg:gap-16 lg:justify-center">
               <SocialIcon
                 url="https://linkedin.com/in/jaggerharness"
                 target="_blank"

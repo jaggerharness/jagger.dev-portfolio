@@ -33,7 +33,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="prose text-lg md:text-4xl mb-4 max-w-4xl">
           Changelog from my journey
         </h2>
-        <p className="prose text-sm md:text-base max-w-sm lg:max-w-lg">
+        <p className="prose 2xl:text-lg pt-4">
           I&apos;ve been working at AceOne Technologies for the past 3.5 years.
           Here&apos;s a timeline of my journey.
         </p>

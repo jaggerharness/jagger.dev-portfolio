@@ -1,6 +1,5 @@
 import React from 'react';
 
-import localFont from 'next/font/local';
 import { twMerge } from 'tailwind-merge';
 
 export const Heading = ({
@@ -15,7 +14,7 @@ export const Heading = ({
   return (
     <Tag
       className={twMerge(
-        'text-base md:text-xl lg:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent',
+        'text-base md:text-xl lg:text-4xl bg-clip-text text-primary',
         className
       )}
     >

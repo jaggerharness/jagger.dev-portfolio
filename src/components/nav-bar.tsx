@@ -34,11 +34,24 @@ export default function Navbar() {
               }}
             />
           )}
-          <Link to="home" spy={true} smooth={true}>
+          <Link to="home" spy={true} smooth={true} className="hidden sm:block">
             <button className="hover:text-primary">home</button>
           </Link>
-          <Link to="aboutMe" spy={true} smooth={true}>
+          <Link
+            to="aboutMe"
+            spy={true}
+            smooth={true}
+            className="hidden sm:block"
+          >
             <button className="hover:text-secondary">about</button>
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            className="hidden sm:block"
+          >
+            <button className="hover:text-primary">contact</button>
           </Link>
         </ul>
       </div>
