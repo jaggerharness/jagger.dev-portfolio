@@ -141,8 +141,8 @@ export default function Home() {
         </section>
       </Element>
       <Element name="aboutMe">
-        <section className="flex flex-col items-center justify-center bg-base-200 w-screen">
-          <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
+        <section className="flex flex-col items-center bg-base-100 b w-screen">
+          <div className="flex flex-col p-8 md:pt-8 z-10 w-fit">
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">About Me</h2>
             <p className="prose 2xl:text-lg pt-4">
               My software development journey started back in 2017 at{' '}
@@ -213,7 +213,7 @@ export default function Home() {
                     alt="thumbnail"
                     height="150"
                     width="150"
-                    className="rounded-md mx-auto sm:mr-auto"
+                    className="rounded-md"
                     style={{ objectFit: 'cover' }}
                   />
                   <div className="flex flex-col justify-between">
@@ -281,7 +281,7 @@ export default function Home() {
                     alt="thumbnail"
                     height="150"
                     width="150"
-                    className="rounded-md mx-auto sm:mr-auto"
+                    className="rounded-md"
                     style={{ objectFit: 'cover' }}
                   />
                   <div className="flex flex-col justify-between">
