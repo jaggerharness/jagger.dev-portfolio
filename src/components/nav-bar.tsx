@@ -9,9 +9,9 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-200 z-50 sticky top-0">
       <div className="flex-1 text-xl">
-        <a className="btn btn-ghost text-xl" href="/">
+        <div className="btn btn-ghost text-xl pointer-events-none">
           jaggerharness.dev
-        </a>
+        </div>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 gap-8 items-center">
@@ -51,7 +51,7 @@ export default function Navbar() {
             smooth={true}
             className="hidden sm:block"
           >
-            <button className="hover:text-primary">contact</button>
+            <button className="hover:text-accent">contact</button>
           </Link>
         </ul>
       </div>

@@ -230,7 +230,7 @@ export default function Home() {
                         }
                       </Paragraph>
                     </div>
-                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                    <div className="flex flex-wrap gap-2 mt-2 md:mb-1 md:mt-0">
                       <span
                         key={'Next.js'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
@@ -298,7 +298,7 @@ export default function Home() {
                         }
                       </Paragraph>
                     </div>
-                    <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                    <div className="flex flex-wrap gap-2 mt-2 md:mb-1 md:mt-0">
                       <span
                         key={'Flutter'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
@@ -312,16 +312,16 @@ export default function Home() {
                         {'Node.js'}
                       </span>
                       <span
-                        key={'TensorFlow'}
-                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
-                      >
-                        {'TensorFlow'}
-                      </span>
-                      <span
                         key={'Python'}
                         className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
                       >
                         {'Python'}
+                      </span>
+                      <span
+                        key={'TensorFlow'}
+                        className="text-xs md:text-xs lg:text-xs px-2 py-1 rounded-sm bg-base-300"
+                      >
+                        {'TensorFlow'}
                       </span>
                     </div>
                   </div>
