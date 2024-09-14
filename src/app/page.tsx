@@ -192,7 +192,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">Portfolio</h2>
             <div className="grid grid-cols-1 gap-10 pt-8">
               <motion.div
-                key={'https://workout-tracker-beige.vercel.app/'}
+                key={'https://www.liftlens.app'}
                 initial={{
                   opacity: 0,
                   x: -50,
@@ -204,8 +204,8 @@ export default function Home() {
                 transition={{ duration: 0.2, delay: 1 * 0.1 }}
               >
                 <Link
-                  href={'https://workout-tracker-beige.vercel.app/'}
-                  key={'https://workout-tracker-beige.vercel.app/'}
+                  href={'https://www.liftlens.app'}
+                  key={'https://www.liftlens.app'}
                   className="group bg-base-100 hover:bg-base-200 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl transition duration-200 p-4"
                 >
                   <Image
