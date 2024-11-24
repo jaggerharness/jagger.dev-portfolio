@@ -111,18 +111,18 @@ export default function Home() {
         <section className="flex items-center justify-center px-4 min-h-screen">
           <div className="flex flex-col p-8 rounded-xl bg-base-300 z-10">
             <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-medium prose text-center lg:text-left">
-              Hello, I'm <span className="text-accent">Jagger</span>
+              Hello, I&apos;m <span className="text-accent">Jagger</span>
             </h1>
             <p className="prose text-lg 2xl:text-xl pt-4 text-center lg:text-left">
-              I'm a Full Stack Developer at{' '}
-              <a
+              I&apos;m a Full Stack Developer at{' '}
+              <Link
                 className="text-secondary"
                 href="https://www.aceonetechnologies.com"
                 target="_blank"
                 rel=""
               >
                 AceOne Technologies
-              </a>{' '}
+              </Link>{' '}
               in Jonesboro, AR. My role involves developing custom software
               solutions, optimizing / maintaining existing software
               infrastructures, and helping to turn ideas into reality.
@@ -146,14 +146,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">About Me</h2>
             <p className="prose 2xl:text-lg pt-4">
               My software development journey started back in 2017 at{' '}
-              <a
+              <Link
                 className="text-primary"
                 href="https://www.astate.edu/"
                 target="_blank"
                 rel=""
               >
                 Arkansas State University.
-              </a>{' '}
+              </Link>{' '}
               Fresh out of college in an unrelated field, I began to wonder what
               my true passion was. Despite having a background in an entirely
               different field, my fascination with computers and video game
@@ -164,14 +164,14 @@ export default function Home() {
               <span className="italic">Everything clicked.</span> The joy and
               excitement I experienced while learning about programming were
               unlike anything I had felt before. It was in that moment that I
-              knew I had found my true passion. Since then, I've graduated with
-              a degree in computer science and have immersed myself in the world
-              of software development, constantly learning and growing along the
-              way.
+              knew I had found my true passion. Since then, I&apos;ve graduated
+              with a degree in computer science and have immersed myself in the
+              world of software development, constantly learning and growing
+              along the way.
             </p>
             <p className="prose 2xl:text-lg pt-4">
-              Stay tuned for updates as I continue with exciting projects. I've
-              got some interesting ideas in the pipeline.
+              Stay tuned for updates as I continue with exciting projects.
+              I&apos;ve got some interesting ideas in the pipeline.
             </p>
             <Image
               src={'/avatar.png'}
@@ -336,8 +336,9 @@ export default function Home() {
           <div className="flex flex-col p-8 md:pt-8 pb-16 z-10 w-11/12 md:w-2/3 mx-auto">
             <h2 className="text-3xl md:text-4xl pt-8 font-bold">Contact Me</h2>
             <p className="prose 2xl:text-lg pt-4">
-              I'm always open to new opportunities and collaborations. Feel free
-              to reach out to me if you have any questions or just want to chat.
+              I&apos;m always open to new opportunities and collaborations. Feel
+              free to reach out to me if you have any questions or just want to
+              chat.
             </p>
             <p className="flex flex-row pt-12 justify-between lg:gap-16 lg:justify-center">
               <SocialIcon
