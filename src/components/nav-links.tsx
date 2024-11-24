@@ -8,7 +8,7 @@ export default function NavLinks() {
   const [theme, setTheme] = useState('dark');
   return (
     <div className="flex-none">
-      <ul className="menu menu-horizontal px-1 gap-8 items-center">
+      <nav className="menu menu-horizontal px-1 gap-8 items-center">
         {theme == 'dark' ? (
           <MoonStars
             weight="duotone"
@@ -28,16 +28,34 @@ export default function NavLinks() {
             }}
           />
         )}
-        <Link to="home" spy={true} smooth={true} className="hidden sm:block">
+        <Link
+          href="#home"
+          to="home"
+          spy={true}
+          smooth={true}
+          className="hidden sm:block"
+        >
           <button className="hover:text-primary">home</button>
         </Link>
-        <Link to="aboutMe" spy={true} smooth={true} className="hidden sm:block">
+        <Link
+          href="#aboutMe"
+          to="aboutMe"
+          spy={true}
+          smooth={true}
+          className="hidden sm:block"
+        >
           <button className="hover:text-secondary">about</button>
         </Link>
-        <Link to="contact" spy={true} smooth={true} className="hidden sm:block">
+        <Link
+          href="#contact"
+          to="contact"
+          spy={true}
+          smooth={true}
+          className="hidden sm:block"
+        >
           <button className="hover:text-accent">contact</button>
         </Link>
-      </ul>
+      </nav>
     </div>
   );
 }

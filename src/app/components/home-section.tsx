@@ -26,14 +26,13 @@ export default function HomeSection() {
             infrastructures, and helping to turn ideas into reality.
           </p>
           <ReactLink
+            href="#aboutMe"
             to="aboutMe"
-            className="self-center"
+            className="self-center btn btn-primary mt-4 2xl:text-xl w-max"
             spy={true}
             smooth={true}
           >
-            <button className="btn btn-primary mt-4 2xl:text-xl w-max">
-              About Me
-            </button>
+            About Me
           </ReactLink>
         </div>
       </section>

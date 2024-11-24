@@ -37,7 +37,7 @@ export default function PortfolioEntries() {
           <div className="flex flex-col justify-between">
             <div>
               <Heading
-                as="h4"
+                as="h3"
                 className="font-bold text-lg md:text-lg lg:text-lg "
               >
                 {'LiftLens'}
@@ -105,7 +105,7 @@ export default function PortfolioEntries() {
           <div className="flex flex-col justify-between">
             <div>
               <Heading
-                as="h4"
+                as="h3"
                 className="font-bold text-lg md:text-lg lg:text-lg "
               >
                 {'Smart Park'}
