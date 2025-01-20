@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="night" lang="en">
-      <body className={`antialiased ${inter.className}`}>
+      <body className={`antialiased ${inter.className} overflow-x-hidden`}>
         <main>
           <Navbar />
           <div className="flex flex-col justify-center items-center flex-grow">
