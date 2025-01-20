@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Changelog from my journey
         </h2>
         <p className="prose 2xl:text-lg pt-4">
-          I&apos;ve been working at AceOne Technologies for the past 3.5 years.
+          I recently started a new position as a Full Stack Developer at Strategic Education Inc.
           Here&apos;s a timeline of my journey.
         </p>
       </div>

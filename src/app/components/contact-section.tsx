@@ -28,6 +28,11 @@ export default function ContactSection() {
               target="_blank"
             />
             <SocialIcon
+              url="https://bsky.app/profile/jaggerharness.dev"
+              network="bsky.app"
+              target="_blank"
+            />
+            <SocialIcon
               url="https://discordapp.com/users/364610872816959498"
               network="discord"
               target="_blank"

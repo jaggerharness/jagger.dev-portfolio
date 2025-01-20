@@ -7,12 +7,39 @@ import PortfolioSection from './components/portfolio-section';
 export default function Home() {
   const data = [
     {
-      title: 'July 2023 - Present',
+      title: 'January 2024 - Present',
       content: (
         <div>
           <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
-            Senior Full Stack Software Developer, AceOne Technologies –
-            Jonesboro, AR
+            Full Stack Software Developer (AI), Strategic Education Inc
+          </p>
+          <ul className="prose list-disc">
+            <li>
+            Architect and deploy conversational AI chatbots using Dialogflow for multiple higher education institutions, including Stayer and Capella 
+            Universities, leveraging GCP and microservices architecture to handle complex student inquiries and administrative tasks
+            </li>
+            <li>
+            Collaborate in an Agile environment with cross-functional teams including Product 
+            Owners, Conversational Analysts, and QA specialists to iteratively improve chatbot functionality and user experience
+            </li>
+            <li>
+            Implement comprehensive CI/CD pipelines using Git and automated testing frameworks, maintaining 80%+ test coverage and reducing deployment time by 40%
+            </li>
+            <li>
+            Optimize cloud infrastructure on Google Cloud Platform (GCP), designing and maintaining microservices that handle thousands 
+            of daily student interactions while ensuring high availability and performance
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'July 2023 - January 2024',
+      content: (
+        <div>
+          <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
+            Senior Full Stack Software Developer, AceOne Technologies
+            
           </p>
           <ul className="prose list-disc">
             <li>
@@ -48,7 +75,7 @@ export default function Home() {
       content: (
         <div>
           <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
-            Full Stack Software Developer, AceOne Technologies – Jonesboro, AR
+            Full Stack Software Developer, AceOne Technologies
           </p>
           <ul className="prose list-disc">
             <li>
@@ -76,7 +103,7 @@ export default function Home() {
       content: (
         <div>
           <p className="prose text-lg 2xl:text-xl mb-8 font-semibold">
-            Software Development Intern, AceOne Technologies – Jonesboro, AR
+            Software Development Intern, AceOne Technologies
           </p>
           <ul className="prose list-disc">
             <li>
