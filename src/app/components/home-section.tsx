@@ -1,7 +1,6 @@
 'use client';
 
 import { Element, Link as ReactLink } from 'react-scroll';
-import Link from 'next/link';
 
 export default function HomeSection() {
   return (
